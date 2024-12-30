@@ -1,0 +1,24 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family:sans-serif;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+@media(max-width:478px){
+  html{
+    font-size: 58%;
+  }
+}
+
+@media(max-width:428px){
+  html{
+    font-size: 55%;
+  }
+}

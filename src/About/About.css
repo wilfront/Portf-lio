@@ -1,0 +1,116 @@
+.about{
+    background-color: #FAFAFA;
+    padding: 1.4rem 40px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap:50px ;
+}
+
+.text-about {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    width: 50%;
+    align-items: center;
+    gap: 20px;
+}
+
+.text-about h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgb(10, 10, 10);
+}
+
+.borda {
+    background-color: #7843E9;
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.text-about p {
+    color: #5F6A7A;
+    font-size: 1.7rem;
+}
+
+.grid-about {
+    display: flex;   
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    gap: 50px;
+}
+
+.conhecer{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    font-size: 1.5rem;
+    align-items: start;
+    text-align: start;
+    gap: 20px;
+}
+
+.conhecer h1{
+    font-size: 2.5rem;
+}
+
+.conhecer p {
+    font-size: 1.7rem;
+    color: #646F82;
+}
+
+.habilidades{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 1.5rem;   
+    gap: 30px;
+}
+
+.habilidades h1 {
+    font-size: 2.5rem;
+}
+
+.icones-hab{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, 100px);
+    grid-template-rows: 50px ;
+    justify-content: center;
+}
+
+.hab {
+    background-color: #ebecec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    color:rgb(75, 75, 75);
+    font-weight: 450;
+}
+
+.perfil img {
+    display: flex;
+    height: auto;
+    width: 280px;
+    border-radius: 5px;
+}
+
+@media(max-width:1199px){
+    .icones-hab{
+        grid-template-rows: 50px 50px 50px;
+    }
+}
+
+@media(max-width:739px){
+    .icones-hab{
+        grid-template-rows: 50px 50px 50px 50px 50px;
+    }
+}
