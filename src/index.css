@@ -17,8 +17,3 @@ html{
   }
 }
 
-@media(max-width:428px){
-  html{
-    font-size: 55%;
-  }
-}

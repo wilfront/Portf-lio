@@ -5,6 +5,7 @@ import Home from './Home/Home'
 import About from './About/About'
 import Projects from './Projects/Projects'
 import Contact from './Contact/Contact'
+import Footer from "./Footer/Footer"
 
 
 function App() {
@@ -15,12 +16,12 @@ function App() {
         <Header />
         <div className="menu-header">
           <Routes>
-            <Route path='/' element={<Home/>}></Route>
-            <Route path='/About' element={<About/>}></Route>
-            <Route path='/Projects' element={<Projects/>}></Route>
-            <Route path='/Contact' element={<Contact/>}></Route>
+            <Route path='/' element={<Home />}></Route>
+            <Route path='/About' element={<About />}></Route>
+            <Route path='/Projects' element={<Projects />}></Route>
           </Routes>
         </div>
+        <Footer />
       </BrowserRouter>
     </>
   )
