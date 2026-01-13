@@ -1,0 +1,165 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+
+.home{
+    background:linear-gradient(rgba(247, 247, 247, 0.918), rgba(248, 248, 248, 0.678)),url(/common-bg.svg);
+    background-size: cover;
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    padding: 1.4rem 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+html[data-theme="dark"] .home {
+    background: linear-gradient(rgba(26, 26, 26, 0.9), rgba(45, 45, 45, 0.8)), url(/common-bg.svg);
+    background-size: cover;
+}
+
+.text-home {
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--text-primary);
+    width: 100%;
+    max-width: 95%;
+}
+
+.text-home h1 {
+    font-weight: 400;
+    font-size: 3rem;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.text-home span {
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.typing{
+    font-size: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    max-width: 20ch;
+    color: var(--text-tertiary);
+    animation: typing 5s steps(25) alternate infinite;
+    border-right: 3px solid var(--text-tertiary);
+    padding-right: 2px;
+}
+
+@keyframes typing{
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+.btn button {
+    border: none;
+    padding: 1rem 4rem 1rem 4rem;
+    background-color: var(--accent-color);
+    color: white;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.btn :hover{
+    background-color: rgba(120, 67, 233, 0.7);
+}
+
+
+.instagram, .github {
+    color: var(--text-primary);
+}
+
+@media(max-width:768px){
+    .home {
+        padding: 1rem 15px;
+        min-height: auto;
+    }
+}
+
+@media(max-width:480px){
+    .text-home {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .text-home h1 {
+        font-size: 1.4rem;
+        line-height: 1.3;
+    }
+
+    .text-home span {
+        font-size: 2.2rem;
+        margin: 8px 0;
+    }
+
+    .typing{
+        font-size: 1.4rem;
+        max-width: 85vw;
+        animation: typing 4s steps(18) infinite;
+        border-right: 2px solid var(--text-tertiary);
+    }
+
+    .btn button {
+        padding: 0.9rem 1.8rem;
+        font-size: 1.1rem;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    .instagram, .github {
+        font-size: 1.8rem;
+    }
+}
+
+@media(max-width:640px){
+    .text-home {
+        font-size: 1.8rem;
+    }
+
+    .text-home h1 {
+        font-size: 1.6rem;
+    }
+
+    .text-home span {
+        font-size: 2.8rem;
+    }
+
+    .typing{
+        font-size: 1.6rem;
+    }
+
+    .btn button {
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+    }
+}

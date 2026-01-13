@@ -1,0 +1,182 @@
+.container-footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: var(--footer-bg);
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px;
+    gap: 30px;
+}
+
+footer{
+    background-color: var(--footer-bg);
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 60px 40px;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: start;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.text-footer{
+    color: #ffffff !important;
+    font-size: 1rem;
+    align-items: start;
+    text-align: start;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text-footer h1{
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ffffff !important;
+}
+
+.text-footer p {
+    color: #b0b0b0 !important;
+    font-weight: 300;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.social {
+    color: #ffffff !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    text-align: start;
+    gap: 20px;
+    width: 45%;
+}
+
+.social h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #ffffff !important;
+}
+
+.rede{
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.instagram, .linkedin, .github {
+    font-size: 2rem;
+    color: #ffffff !important;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instagram svg, .linkedin svg, .github svg {
+    fill: #ffffff !important;
+    color: #ffffff !important;
+}
+
+.instagram:hover, .linkedin:hover, .github:hover {
+    color: var(--accent-color) !important;
+}
+
+.instagram:hover svg, .linkedin:hover svg, .github:hover svg {
+    fill: var(--accent-color) !important;
+    color: var(--accent-color) !important;
+}
+
+.copy {
+    text-align: center;
+    width: 100%;
+}
+
+.copy h6{
+    color: #b0b0b0 !important;
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin: 20px 0 0 0;
+}
+
+.borda-footer{
+    background-color: rgba(170, 169, 169, 0.3);
+    width: 100%;
+    height: 1px;
+    margin: 0;
+}
+
+/* Tablet */
+@media(max-width: 1024px){
+    footer {
+        padding: 50px 30px;
+        gap: 30px;
+    }
+
+    .text-footer {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .social {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .text-footer h1 {
+        font-size: 1.5rem;
+    }
+
+    .social h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Mobile */
+@media(max-width: 640px){
+    .container-footer {
+        padding: 40px 20px;
+        gap: 20px;
+    }
+
+    footer {
+        padding: 40px 20px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .text-footer {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .social {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .text-footer h1 {
+        font-size: 1.3rem;
+    }
+
+    .social h1 {
+        font-size: 1.3rem;
+    }
+
+    .instagram, .linkedin, .github {
+        font-size: 1.8rem;
+    }
+
+    .copy h6 {
+        font-size: 0.8rem;
+        margin-top: 30px;
+    }
+}
